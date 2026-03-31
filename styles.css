@@ -1,0 +1,46 @@
+html {background-color: black}
+.title {
+    color: #ffffff;
+}
+
+div {
+  color: white;
+}
+
+/* landing page */
+.logocycle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  width: 90%;
+}
+.wrapper {
+    text-align: center;
+    position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);  
+}
+
+.enterButton {
+  font-size: 40px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: transform 0.3s ease-in-out;
+@media screen and (max-width: 769px) {
+  .enterButton {
+  font-size: 600px;
+  }
+}
+}
+
+.enterButton:hover {
+  transform: scale(1.6); /* */
+  background-color: #000000; 
+}
