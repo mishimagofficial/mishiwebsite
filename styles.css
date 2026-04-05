@@ -1,5 +1,8 @@
 body {
-  background-color: black
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -7,9 +10,23 @@ body {
   src: url(/assets/fonts/Rock3D-Regular.ttf);
 }
 
+@font-face {
+  font-family: PaletteMosaic;
+  src: url(/assets/fonts/PaletteMosaic-Regular.ttf);
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h2, h3, p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
-  width: 100%;
-  place-content: center;
+  color: white;
 }
 
 /* marquee */
@@ -17,15 +34,11 @@ body {
   margin: 0rem auto auto auto;
   display: flex;
   user-select: none;
-  width: 100%;
+  overflow-x: hidden;
 }
 
 .marquee-text {
-  font-size: 3.5rem;
-  line-height: 0;
-  font-family: Rock3D;
   overflow: hidden;
-  color: white;
 }
 
 .marquee-text-track {
@@ -34,6 +47,12 @@ body {
   padding-left: 4rem;
   width: max-content;
   animation: marquee-move-text 10s linear infinite;
+}
+
+.marquee-text-track h1 {
+  font-size: 3.5rem;
+  line-height: 0;
+  font-family: Rock3D;
 }
 
 @keyframes marquee-move-text {
@@ -46,19 +65,22 @@ body {
 .landing {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  place-content: center;
 }
 
-.carousel {
-  margin-top: 1rem;
+.placeholder {
+  margin: 1rem auto 0 auto;
   height: 300px;
   width: 300px;
   background-color: aliceblue;
 }
 
+.enterButton div {
+  height: 4rem;
+}
+
 .enterButton {
-  margin-top: 1rem;
+  margin: 1rem auto 0 auto;
   text-align: center;
   font-size: 40px;
   font-family: "Courier New", Courier, monospace;
@@ -79,7 +101,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .carousel {
+  .placeholder {
     margin-top: 1.5rem;
   }
 
@@ -90,13 +112,13 @@ body {
 }
 
 @media screen and (min-width: 1300px) {
-  .carousel {
+  .placeholder {
     margin-top: 4rem;
     width: 400px;
     height: 400px;
   }
 
-  .marquee-text {
+  .marquee-text-track h1 {
     font-size: 4rem;
   }
 
@@ -108,7 +130,10 @@ body {
 
 /* home page */
 .home-grid {
+  padding: 0;
+  margin: 0;
   display: grid;
+  gap: 2rem;
   grid-template-areas: 
     "announcement"
     "preview"
@@ -137,6 +162,51 @@ body {
   }
 }
 
-.announcement {
-  width: 100%;
+.home-grid h2 {
+  text-align: center;
+}
+
+.announcement img {
+  max-width: 100%;
+  height: auto;
+}
+
+.announcement h2 {
+  text-align: right;
+  font-size: 1.5rem;
+  font-family: PaletteMosaic;
+  font-weight: 100;
+  margin: 1rem 0 1rem 0;
+}
+
+.preview {
+
+}
+
+.preview h2 {
+  text-align: center;
+}
+
+.carousel {
+  display: grid;
+  justify-content: center;
+  grid-template-areas: 
+  "cover spread1"
+  "spread2 spread3";
+}
+
+.carousel img {
+  width: 80%;
+  max-width: 20rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.widget {
+}
+
+.about img {
+  max-width: 100%;
+  height: auto;
 }
