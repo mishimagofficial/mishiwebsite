@@ -13,14 +13,10 @@
       <div class="marquee-wrapper">
         <div class="marquee-text">
           <div class="marquee-text-track">
-            <h1>mishimag</h1>
-            <h1 aria-hidden="false">mishimag</h1>
-            <h1 aria-hidden="false">mishimag</h1>
-            <h1 aria-hidden="false">mishimag</h1>
-            <h1 aria-hidden="false">mishimag</h1>
-            <h1 aria-hidden="false">mishimag</h1>
-            <h1 aria-hidden="false">mishimag</h1>
-            <h1 aria-hidden="false">mishimag</h1>
+            <h1>issue #1 out now!</h1>
+            <h1 aria-hidden="false">issue #1 out now!</h1>
+            <h1 aria-hidden="false">issue #1 out now!</h1>
+            <h1 aria-hidden="false">issue #1 out now!</h1>
           </div>
         </div>
       </div>
@@ -29,16 +25,24 @@
         
         <div class="release">
           <img src="/assets/images/announcement-placeholder-img.jpg"/>
-          <h2>Issue #1 Froghop<br>A Place in Time</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <div class="text">
+            <h2>Issue #1 Froghop<br>A Place in Time</h2>
+            <p>Welcome to <mark>Froghop</mark>, the first edition of Mishi Mag! Here you'll find stories, experiences, and art from different
+              pockets of the world - from big cities to university towns. We wanted to take snapshots of different scenes and
+              subcultures in time, as well as shout out and showcase some great artists.
+              <br><br>
+              From it's synthesis in  all the way to now, Froghop has been on a journey of change and so have the scenes that
+              can
+              be found within its pages. This magazine has become a time capsule and a love letter to the past few years. Check out
+              our first edition out now.
+            </p>
+          </div>
         </div>
         
         <div class="preview">
-          <p>Take a peek</p>
-          <p>Click on the right side to flip!</p>
+          <p>Take a peek!</p>
+          <img src="/assets/images/cat_winking.gif" alt="cat winking"/>
+          <p>Click on the right side to flip.</p>
           <div class="pages">
             <a href="/assets/images/froghop cover_1.png" data-lightbox="froghop">
               <img src="/assets/images/froghop cover_1.png" />
@@ -55,18 +59,31 @@
           </div>
           <div class="purchase">
             <p>Want to see more?</p>
-            <button>Digital Release</button>
-            <button>Physical Copy</button>
+            <p>Get a copy from the links below!</p>
+            <div class="links-to-buy">
+              <a onclick="buttonClicked()" href="https://mishimag.itch.io/">
+                <img src="/assets/images/laptop3.gif" alt="computer with a heart graphic on screen" />
+                <p>Digital</p>
+              </a>
+              <a onclick="buttonClicked()" href="">
+                <img src="/assets/images/book.gif" alt="book flipping through pages" />
+                <p>Physical</p>
+              </a>
+            </div>
           </div>
         </div>
       
         <div class="about">
           <img src="/assets/images/about-placeholder-image.jpg"/>
-          <h3>About Mishi Mag</h3>
-          <p>We are a group of friends documenting art and culture in local scenes across the world in a web of interconnection and
-          chance encounters. Our first issue is finally out! Check it out thanks to the hard work of Hannah who started this all
-          and really carried issue 1# from it's birth. Get ready for issue 2, our next edition which is set to be even more
-          collaborative for us.</p>
+          <div class="textbox">
+            <h2>About</h2>
+            <p>
+              <strong>Mishi Mag</strong><br><br>
+              We are a group of friends documenting art and culture in local scenes across the world in a web of interconnection and
+              chance encounters. Our first issue is finally out! Check it out thanks to the hard work of Hannah who started this all
+              and really carried issue 1# from it's birth. Get ready for issue 2, our next edition which is set to be even more
+              collaborative for us.</p>
+          </div>
         </div>
         
         <div class="links">
@@ -75,6 +92,7 @@
           <p>Place 1</p>
           <p>Place 2</p>
         </div>
+        
       </div>
     </div>
     <script src="/scripts/lightbox-plus-jquery.min.js"></script>

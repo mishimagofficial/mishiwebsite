@@ -25,8 +25,30 @@ h2, h3, p, li {
   padding: 0;
 }
 
+p {
+  font-size: 1.1rem;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: chartreuse;
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.4rem;
+  }
+}
+
 .wrapper {
   color: white;
+}
+
+.text {
+  margin: 0 1rem;
 }
 
 /* marquee */
@@ -46,7 +68,7 @@ h2, h3, p, li {
   gap: 4rem;
   padding-left: 4rem;
   width: max-content;
-  animation: marquee-move-text 10s linear infinite;
+  animation: marquee-move-text 15s linear infinite;
 }
 
 .marquee-text-track h1 {
@@ -133,7 +155,7 @@ h2, h3, p, li {
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 4rem;
+  gap: 3rem;
   grid-template-areas: 
     "release"
     "preview"
@@ -174,16 +196,20 @@ h2, h3, p, li {
   margin: 1rem 0 1rem 0;
 }
 
+.release p {
+  width: 90%;
+}
+
 .preview {
   text-align: center;
 }
 
 .pages {
-  margin: 1rem 0 1rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 .pages img {
-  width: 80%;
+  width: 70%;
   max-width: 20rem;
   height: auto;
   display: block;
@@ -196,11 +222,42 @@ h2, h3, p, li {
   transform: rotate(10deg);
 }
 
+.links-to-buy {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.links-to-buy img {
+  width: 120px;
+  height: 100px;
+}
+
 .about img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
   display: block;
+}
+
+.about .textbox {
+  margin: 1rem 1rem 0 1rem;
+  border-style: outset;
+}
+
+.about .textbox h2 {
+  
+  background-color: #aaaaaa;
+  padding: .3rem 0;
+}
+
+.about .textbox p {
+  color: black;
+  background-color: white;
+  padding: 1rem;
 }
 
 .links {
