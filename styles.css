@@ -194,6 +194,8 @@ a:hover {
   font-family: PaletteMosaic;
   font-weight: 100;
   margin: 1rem 0 1rem 0;
+  text-decoration: underline;
+  text-decoration-color: chartreuse;
 }
 
 .release p {
@@ -202,6 +204,10 @@ a:hover {
 
 .preview {
   text-align: center;
+}
+
+.directions img {
+  margin: 1rem 0;
 }
 
 .pages {
@@ -262,6 +268,7 @@ a:hover {
 
 .links {
   text-align: center;
+  margin: 0 0 2rem 0;
 }
 
 .links ul li {
