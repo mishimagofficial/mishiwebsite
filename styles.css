@@ -1,9 +1,4 @@
-body {
-  background-color: black;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/*fonts*/
 
 @font-face {
   font-family: Rock3D;
@@ -13,6 +8,68 @@ body {
 @font-face {
   font-family: PaletteMosaic;
   src: url(/assets/fonts/PaletteMosaic-Regular.ttf);
+}
+
+@font-face {
+  font-family: ZCOOL_KuaiLe;
+  src: url(/assets/fonts/ZCOOLKuaiLe-Regular.ttf);
+}
+
+@font-face {
+  font-family: Barriecito;
+  src: url(/assets/fonts/Barriecito-Regular.ttf);
+}
+@font-face {
+  font-family: Blaka;
+  src: url(/assets/fonts/Blaka-Regular.ttf);
+}
+
+@font-face {
+  font-family: Danfo;
+  src: url(/assets/fonts/Danfo-Regular-VariableFont_ELSH.ttf);
+}
+
+@font-face {
+  font-family: HachiMaruPop;
+  src: url(/assets/fonts/HachiMaruPop-Regular.ttf);
+}
+
+@font-face {
+  font-family: kaerukaeru;
+  src: url(/assets/fonts/kaerukaeru-Regular.otf);
+}
+
+@font-face {
+  font-family: KirangHaerang;
+  src: url(/assets/fonts/KirangHaerang-Regular.ttf);
+}
+
+@font-face {
+  font-family: Manufacturing Consent;
+  src: url(/assets/fonts/ManufacturingConsent-Regular.ttf);
+}
+
+@font-face {
+  font-family: Monomaniac One;
+  src: url(/assets/fonts/MonomaniacOne-Regular.ttf);
+}
+@font-face {
+  font-family: Shizuru;
+  src: url(/assets/fonts/Shizuru-Regular.ttf);
+}
+
+@font-face {
+  font-family: SyneMono;
+  src: url(/assets/fonts/SyneMono-Regular.ttf);
+}
+
+/*body*/
+
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -30,7 +87,7 @@ p {
 }
 
 a {
-  color: blue;
+  color: orange;
 }
 
 a:hover {
@@ -45,6 +102,7 @@ a:hover {
 
 .wrapper {
   color: white;
+  overflow: hidden;
 }
 
 .text {
@@ -71,49 +129,140 @@ a:hover {
   animation: marquee-move-text 15s linear infinite;
 }
 
-.marquee-text-track h1 {
-  font-size: 3.5rem;
-  line-height: 0;
-  font-family: Rock3D;
-}
-
 @keyframes marquee-move-text {
   to {
     transform: translateX(-50%);
   }
 }
 
+/* moving animations */
+@keyframes moveLeft {
+  from {
+    transform: translateX(100vw);
+  }
+
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-100vw);
+  }
+
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes seeSaw {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-2px) translateY(-2px);
+  }
+
+  25% {
+    transform: translateX(0px) translateY(3px);
+  }
+
+  50% {
+    transform: translateX(-1px) translateY(-2px);
+  }
+
+  75% {
+    transform: translateX(0px) translateY(3px);
+  }
+
+  100% {
+    transform: translateX(-0px) translateY(-2px);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform:  translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 /* landing page */
+.full-height {
+  height: 100vh;
+}
+
+.index-marquee {
+  font-family: SyneMono;
+  font-size: 1.5rem;
+}
+
+.walking-cat {
+  margin-top: -2rem;
+  animation: moveRight 10s linear infinite;
+}
+
 .landing {
   display: flex;
   flex-direction: column;
   place-content: center;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.placeholder {
-  margin: 1rem auto 0 auto;
-  height: 300px;
-  width: 300px;
-  background-color: aliceblue;
-}
-
-.enterButton div {
-  height: 4rem;
+.landing-graphic {
+  margin: 0 auto; 
 }
 
 .enterButton {
-  margin: 1rem auto 0 auto;
+  margin: 2rem auto 1.5rem auto;
   text-align: center;
   font-size: 40px;
-  font-family: "Courier New", Courier, monospace;
-  padding: 10px 20px;
+  font-family: Monomaniac One;
+  padding: 0px 12px 10px 12px;
+  line-height: 1;
   transition: transform 0.3s ease-in-out;
   background-color: transparent;
-  border: none;
+  border: inset;  
+  background-color: #aaaaaa;
 }
 
 .enterButton a {
-  color: white;
+  color: black;
   cursor: pointer;
   text-decoration: none;
 }
@@ -123,22 +272,13 @@ a:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .placeholder {
-    margin-top: 1.5rem;
-  }
 
   .enterButton {
     font-size: 3rem;
-    margin-top: 1rem;
   }
 }
 
 @media screen and (min-width: 1300px) {
-  .placeholder {
-    margin-top: 4rem;
-    width: 400px;
-    height: 400px;
-  }
 
   .marquee-text-track h1 {
     font-size: 4rem;
@@ -151,6 +291,10 @@ a:hover {
 }
 
 /* home page */
+.home-marquee {
+  font-family: Danfo;
+}
+
 .home-grid {
   overflow-y: hidden;
   overflow-x: hidden;
@@ -185,6 +329,7 @@ a:hover {
   text-align: center;
 }
 
+/*announcement*/
 .announcement {
   position: relative;
 }
@@ -194,20 +339,33 @@ a:hover {
   height: auto;
 }
 
+.announcement-display {
+  animation: slideFromLeft 1s linear;
+}
+
 .announcement h2 {
   text-align: right;
-  font-size: 1.5rem;
-  font-family: PaletteMosaic;
+  font-size: 1.8rem;
+  font-family: kaerukaeru;
   font-weight: 100;
-  margin: 1rem 0 1rem 0;
-  text-decoration: underline;
-  text-decoration-color: chartreuse;
+  margin-top: 1rem;
+  color: black;
+  animation: slideFromRight 2.5s;
+}
+
+.announcement .lines span{
+  background-color: chartreuse;
+}
+
+.announcement h2 span {
+  background-color: chartreuse;
+  padding: 0 .5rem 0 .5rem;
 }
 
 .announcement .frog {
+  margin-top: 1rem;
   overflow-x: hidden;
-  animation: hop 10s linear infinite;
-  margin-bottom: 1rem;
+  animation: moveLeft 10s linear infinite;
 }
 
 .announcement-deco {
@@ -224,26 +382,41 @@ a:hover {
   }
 }
 
-@keyframes hop {
-  from {
-    transform: translateX(100vw);
-  }
-
-  to {
-    transform: translateX(-100vw);
-  }
-}
-
 .announcement p {
   width: 90%;
+  margin: 1rem;
 }
+
+/*preview*/
 
 .preview {
   text-align: center;
 }
 
+.step1 {
+  font-size: 1.5rem;
+  margin: 1rem;
+  transform: rotate(-3deg);
+  margin-bottom: 2rem;
+}
+
+.step2 {
+  font-family: Barriecito;
+  font-size: 3rem;
+  transform: rotate(2deg);
+}
+
+.see-more {
+  font-family: HachiMaruPop;
+}
+
 .winking-cat img {
   margin: 1rem 0;
+}
+
+.go-here {
+  margin-top: 1rem;
+  font-weight: 600;
 }
 
 .pages {
@@ -278,13 +451,15 @@ a:hover {
   height: 100px;
 }
 
+/*about*/
+
 .about { 
   margin: 1rem;
-  
 }
 
 .about img {
   width: 100%;
+  animation: shake .8s ease-in-out infinite alternate;
 }
 
 .about .textbox {
@@ -295,6 +470,8 @@ a:hover {
 .about .textbox h2 {
   background-color: #aaaaaa;
   padding: .3rem 0;
+  font-family: SyneMono;
+  
 }
 
 .about .textbox p {
@@ -303,16 +480,114 @@ a:hover {
   padding: 1rem;
 }
 
+.about .textbox p span {
+  font-family: ZCOOL KuaiLe;
+  font-size: 2rem;
+}
+
+/* links */
 .links {
   text-align: center;
   margin: 0 0 2rem 0;
+  padding: 3rem 0 3rem 0;
+}
+
+.bouncing-letters {
+  display: flex;
+  place-content: center;
+}
+
+.bouncing {
+  animation: bounce 2s infinite alternate;
+  animation-timing-function: cubic-bezier(0.25, 0.85, 0.4, 1);
+}
+
+.letterone {
+  animation-delay: 0s;
+  display: inline-block;
+}
+
+.lettertwo {
+  animation-delay: 0.2s;
+  display: inline-block;
+}
+
+.letterthree {
+  animation-delay: 0.4s;
+  display: inline-block;
+}
+
+.letterfour {
+  animation-delay: 0.6s;
+  display: inline-block;
+}
+
+.letterfive {
+  animation-delay: 1s;
+  display: inline-block;
+}
+
+.lettersix {
+  animation-delay: 1.2s;
+  display: inline-block;
+}
+
+.letterseven {
+  animation-delay: 1.4s;
+  display: inline-block;
+}
+
+.lettereight {
+  animation-delay: 1.6s;
+  display: inline-block;
+}
+
+.letternine {
+  animation-delay: 2s;
+  display: inline-block;
+}
+
+.letterten {
+  animation-delay: 2.2s;
+  display: inline-block;
+}
+
+.lettereleven {
+  animation-delay: 2.4s;
+  display: inline-block;
 }
 
 .links ul li {
   list-style: none;
 }
 
+.links p {
+  font-size: 1.8rem;
+}
+
+.social-media {
+  color: deeppink;
+}
+
+.social-media:hover {
+  color: chartreuse;
+}
+
+.links .text h2 {
+  font-family: Manufacturing Consent;
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+
+
+/* mobile responsiveness */
+
 @media screen and (min-width: 400px) {
+  .announcement h2 {
+    font-size: 2.5rem;
+  }
+
   .about {
     position: relative;
     min-height: 500px;
@@ -333,20 +608,20 @@ a:hover {
   .links {
     margin-top: 5rem;
   }
+
+  .desktop .announcement-title h2 {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
-/* mobile */
 @media screen and (max-width: 800px) {
   .desktop {
     display: none;
   }
-
-  .announcement h2 {
-    font-size: 2rem;
-  }
 }
 
-/* desktop*/
+
 @media screen and (min-width: 801px) {
   .mobile {
     display: none;
@@ -361,7 +636,9 @@ a:hover {
   }
 
   .announcement h2 {
-    font-size: 2.2rem;
+    font-size: 3rem;
+    position: relative;
+    right: 0;
   }
 
   .preview {
@@ -388,6 +665,10 @@ a:hover {
     }
   }
 
+  .step1 {
+    font-size: 2rem;
+  }
+
   .home-grid {
     gap: 5rem 0;
   }
@@ -397,7 +678,6 @@ a:hover {
   }
 }
 
-/* grid-width-responsiveness */
 @media screen and (min-width: 1000px) {
   .home-grid {
     width: 1000px;

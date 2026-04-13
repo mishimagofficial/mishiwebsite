@@ -6,14 +6,18 @@
     <title>Mishi Mag</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="/lightbox.min.css" rel="stylesheet" />
+    <link href="/animate.min.css" rel="stylesheet" />
   </head>
 
   <body>
     <div class="wrapper">
-      <div class="marquee-wrapper">
+      <div class="marquee-wrapper home-marquee">
         <div class="marquee-text">
           <div class="marquee-text-track">
             <h1>issue #1 out now!</h1>
+            <h1 aria-hidden="false">issue #1 out now!</h1>
+            <h1 aria-hidden="false">issue #1 out now!</h1>
+            <h1 aria-hidden="false">issue #1 out now!</h1>
             <h1 aria-hidden="false">issue #1 out now!</h1>
             <h1 aria-hidden="false">issue #1 out now!</h1>
             <h1 aria-hidden="false">issue #1 out now!</h1>
@@ -25,7 +29,7 @@
         
         <div class="announcement">
           <div class="promo">
-            <img src="/assets/images/announcement-placeholder-img.jpg" />
+            <img class="announcement-display" src="/assets/images/announcement-placeholder-img.jpg" />
             <div class="announcement-deco">
               <img src="/assets/images/mishiscape.png"
                 alt="Illustration of a humanoid cat standing front of buildings with a street lamp on the right with low clouds." />
@@ -33,8 +37,11 @@
             
           </div>
           <div class="text">
-            <h2 class="mobile">Issue #1 Froghop<br>A Place in Time</h2>
-            <h2 class="desktop">Issue #1 Froghop: A Place in Time</h2>
+            <h2 class="mobile announcement-title">
+              <div class="lines"><span>Issue #1 Froghop</span></div>
+              <div class="lines"><span>A Place in Time</span></div>
+            </h2>
+            <h2 class="animate__animated animate__slideInRight desktop announcement-title"><div class="border"><span>Issue #1 Froghop: A Place in Time</span></div></h2>
             <img class="frog" src="/assets/images/froghop.gif" alt="frog hopping"/>
             <p>Welcome to Froghop, the first edition of Mishi Mag! Here you'll find stories, experiences, and art from different
               pockets of the world - from big cities to university towns. We wanted to take snapshots of different scenes and
@@ -51,8 +58,8 @@
         
         <div class="preview">
           <div class="directions">
-            <p>Click on the right side of the page to flip.</p>
-            <p>Take a peek!</p>
+            <p class="step1">Click on the right side of the page to flip.</p>
+            <p class="step2">Take a peek!</p>
           </div>
           
           <div class="pages">
@@ -71,15 +78,15 @@
           </div>
 
           <div class="purchase">
-            <p>Want to see more?</p>
+            <p class="see-more" style="margin-bottom: 1rem;">Want to see more?</p>
             <img class="winking-cat" src="/assets/images/cat_winking.gif" alt="cat winking" />
-            <p>Get a copy from the links below!</p>
+            <p class="go-here">Get a copy from the links below!</p>
             <div class="links-to-buy">
-              <a href="https://mishimag.itch.io/" target="_blank">
+              <a href="https://mishimag.itch.io/mishi-mag-issue-i" target="_blank">
                 <img src="/assets/images/laptop3.gif" alt="computer with a heart graphic on screen" />
                 <p>Digital</p>
               </a>
-              <a href="" target="_blank">
+              <a href="https://mishimag.bigcartel.com/product/mishi-mag-issue-1" target="_blank">
                 <img src="/assets/images/book.gif" alt="book flipping through pages" />
                 <p>Physical</p>
               </a>
@@ -88,26 +95,36 @@
         </div>
       
         <div class="about">
-          <img class="about-img-1" src="/assets/images/mishitrain.png" />
+          <img src="/assets/images/mishitrain.png" />
           <div class="textbox">
             <h2>About</h2>
             <p>
-              <strong>Mishi Mag</strong><br><br>
+              <span>Mishi Mag</span><br><br>
               We are a group of friends documenting art and culture in local scenes across the world in a web of interconnection and
               chance encounters. Our first issue is finally out! Check it out thanks to the hard work of Hannah who started this all
               and really carried issue 1# from it's birth. Get ready for issue 2, our next edition which is set to be even more
               collaborative for us.</p>
-          </div>
-
-          
+          </div>          
         </div>
         
         <div class="links">
           <div class="text">
-            <h2>Come find us!</h2>
-            <p>Instagram icon</p>
-            <p>Place 1</p>
-            <p>Place 2</p>
+            <div class="bouncing-letters">
+              <h2 class="bouncing letterone">C</h2>
+              <h2 class="bouncing lettertwo">o</h2>
+              <h2 class="bouncing letterthree">m</h2>
+              <h2 class="bouncing letterfour">e</h2>
+              <h2>&nbsp;</h2>
+              <h2 class="bouncing letterfive">f</h2>
+              <h2 class="bouncing lettersix">i</h2>
+              <h2 class="bouncing letterseven">n</h2>
+              <h2 class="bouncing lettereight">d</h2>
+              <h2>&nbsp;</h2>
+              <h2 class="bouncing letternine">u</h2>
+              <h2 class="bouncing letterten">s</h2>
+              <h2 class="bouncing lettereleven">!</h2>
+            </div>
+            <a href="https://www.instagram.com/mishimagazine/" target="_blank" class="social-media"><p>Instagram</p></a>
           </div>
         </div>
       </div>
