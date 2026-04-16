@@ -1,16 +1,6 @@
 /*fonts*/
 
 @font-face {
-  font-family: Rock3D;
-  src: url(/assets/fonts/Rock3D-Regular.ttf);
-}
-
-@font-face {
-  font-family: PaletteMosaic;
-  src: url(/assets/fonts/PaletteMosaic-Regular.ttf);
-}
-
-@font-face {
   font-family: ZCOOL_KuaiLe;
   src: url(/assets/fonts/ZCOOLKuaiLe-Regular.ttf);
 }
@@ -18,10 +8,6 @@
 @font-face {
   font-family: Barriecito;
   src: url(/assets/fonts/Barriecito-Regular.ttf);
-}
-@font-face {
-  font-family: Blaka;
-  src: url(/assets/fonts/Blaka-Regular.ttf);
 }
 
 @font-face {
@@ -40,11 +26,6 @@
 }
 
 @font-face {
-  font-family: KirangHaerang;
-  src: url(/assets/fonts/KirangHaerang-Regular.ttf);
-}
-
-@font-face {
   font-family: Manufacturing Consent;
   src: url(/assets/fonts/ManufacturingConsent-Regular.ttf);
 }
@@ -52,10 +33,6 @@
 @font-face {
   font-family: Monomaniac One;
   src: url(/assets/fonts/MonomaniacOne-Regular.ttf);
-}
-@font-face {
-  font-family: Shizuru;
-  src: url(/assets/fonts/Shizuru-Regular.ttf);
 }
 
 @font-face {
