@@ -2,42 +2,42 @@
 
 @font-face {
   font-family: ZCOOL_KuaiLe;
-  src: url(/assets/fonts/ZCOOLKuaiLe-Regular.ttf);
+  src: url(./assets/fonts/ZCOOLKuaiLe-Regular.ttf);
 }
 
 @font-face {
   font-family: Barriecito;
-  src: url(/assets/fonts/Barriecito-Regular.ttf);
+  src: url(./assets/fonts/Barriecito-Regular.ttf);
 }
 
 @font-face {
   font-family: Danfo;
-  src: url(/assets/fonts/Danfo-Regular-VariableFont_ELSH.ttf);
+  src: url(./assets/fonts/Danfo-Regular-VariableFont_ELSH.ttf);
 }
 
 @font-face {
   font-family: HachiMaruPop;
-  src: url(/assets/fonts/HachiMaruPop-Regular.ttf);
+  src: url(./assets/fonts/HachiMaruPop-Regular.ttf);
 }
 
 @font-face {
   font-family: kaerukaeru;
-  src: url(/assets/fonts/kaerukaeru-Regular.otf);
+  src: url(./assets/fonts/kaerukaeru-Regular.otf);
 }
 
 @font-face {
   font-family: Manufacturing Consent;
-  src: url(/assets/fonts/ManufacturingConsent-Regular.ttf);
+  src: url(./assets/fonts/ManufacturingConsent-Regular.ttf);
 }
 
 @font-face {
   font-family: Monomaniac One;
-  src: url(/assets/fonts/MonomaniacOne-Regular.ttf);
+  src: url(./assets/fonts/MonomaniacOne-Regular.ttf);
 }
 
 @font-face {
   font-family: SyneMono;
-  src: url(/assets/fonts/SyneMono-Regular.ttf);
+  src: url(./assets/fonts/SyneMono-Regular.ttf);
 }
 
 /*body*/
@@ -313,6 +313,7 @@ a:hover {
 
 .announcement-banner {
   max-width: 100%;
+  height: auto;
   animation: slideFromLeft 1s linear;
 }
 
@@ -566,11 +567,6 @@ a:hover {
     font-size: 2.5rem;
   }
 
-    .announcement-banner {
-      max-width: 650px;
-      height: auto;
-    }
-
   .about {
     position: relative;
     min-height: 500px;
@@ -622,6 +618,11 @@ a:hover {
     font-size: 3rem;
     position: relative;
     right: 0;
+  }
+
+  .announcement-banner {
+    max-width: 650px;
+    height: auto;
   }
 
   .preview {
